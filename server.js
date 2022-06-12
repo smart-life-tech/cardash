@@ -180,6 +180,6 @@ io.on('connection', function (socket) {
         }
       }
 
-      socket.emit('ecuData', {'rpm':Math.floor(rpm),'mph':Math.floor(mph),'coolantTemp':Math.floor(coolantTemp)  'rpm':Math.floor(rpm)});
+      socket.emit('ecuData', {'rpm':Math.floor(rpm),'mph':Math.floor(mph),'coolantTemp':Math.floor(coolantTemp) , 'airFlowVolt':Math.floor(airFlowVolt)  , 'w temp':Math.floor(wTemp), 'throttleVolt':Math.floor(throttleVolt), 'batteryVolt':Math.floor(batteryVolt)});
     }, 100);
 });
